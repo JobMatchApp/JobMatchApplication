@@ -1,0 +1,8 @@
+{
+  "name": "JobMatch",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "c38c6967"
+}
