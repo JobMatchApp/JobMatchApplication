@@ -1,8 +1,5 @@
 {
-  "name": "JobMatch",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular",
-  "id": "c38c6967"
+  "name": "my-job-app",
+  "integrations": {},
+  "type": "angular"
 }
