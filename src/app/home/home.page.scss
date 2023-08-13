@@ -89,7 +89,7 @@
     
     }
 
-    .icon{
+    /* .icon{
       position: absolute;
       top: 50%;
       left: 50%;
@@ -98,7 +98,7 @@
       opacity: 0;
       font-size: 100px;
 
-    }
+    }*/
 
   }
 }
@@ -119,3 +119,12 @@ center {
 
 
 
+.navigation-buttons {
+  position: absolute;
+  bottom: 10px; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}

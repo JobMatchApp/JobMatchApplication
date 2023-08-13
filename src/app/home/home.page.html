@@ -5,7 +5,7 @@
       <ion-title>Menu Content</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">This is the menu content.</ion-content>
+  <ion-content class="ion-padding">This is the menu contttent.</ion-content>
 </ion-menu>
 <ion-buttons slot="start">
   <ion-menu-button></ion-menu-button>
@@ -48,19 +48,58 @@
         </ion-card-content>
       </ion-card>
 
+      <div class="navigation-buttons">
+        <ion-button (click)="scrollLeft()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+        <ion-button (click)="scrollRight()">
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-button>
+    
+    
+      </div>
+      
       <!-- Icons -->
 
-    <ion-icon name="heart-dislike" class="icon" color="danger" id="reject-icon"></ion-icon>
-    <ion-icon name="heart" class="icon" color="primary" id="accept-icon"></ion-icon>
+   <!--  <ion-icon name="heart-dislike" class="icon" color="danger" id="reject-icon"></ion-icon>
+    <ion-icon name="heart" class="icon" color="primary" id="accept-icon"></ion-icon> -->
 
     </div>
+    
   </div>
+
+
+
+
 
   <ng-template #emptyTemplate>
     <div class="center">
-      <ion-icon name="close-circle"></ion-icon>
+      <ion-icon name="checkmark-circle"></ion-icon>
       <br>
       <ion-note>All swiped</ion-note>
     </div>
   </ng-template>
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="tab1">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Tab 1</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="tab2">
+        <ion-icon name="apps"></ion-icon>
+        <ion-label>Tab 2</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="tab3">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>Tab 3</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  
 </ion-content>  
+
+

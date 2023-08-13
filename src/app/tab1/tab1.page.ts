@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  user: any; // Déclaration de la propriété user
 
-  constructor() {}
+  constructor() {
+    this.user = { name: 'John Doe', age: 30, bio: 'Some bio text' };
+  }
 
 }
