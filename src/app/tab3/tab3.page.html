@@ -70,12 +70,83 @@
       <ion-input ></ion-input>
     </ion-item>
 
-    
+    <ion-button>Sauvegarder</ion-button>
   </ion-list>
 
 
 
+  <div class="header">
+    <h2>Cedric</h2>
+    <div class="space-between">
+        <div class="followings">
+            <ion-badge color="primary" mode="ios">42</ion-badge>
+            <p>Match</p>
+        </div>
+        <div class="followings">
+            <ion-badge color="primary" mode="ios">42</ion-badge>
+            <p>Message</p>
+        </div>
+    </div>
+</div>
+
+<div class="flex">
+    <div class="box-border">
+        <div class="border-white">
+            <div class="img-box">
+                <img src='assets/photo/tof13.jpg'>
+            </div>
+        </div>
+        <ion-fab-button>
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </div>
+</div>
+
+<ion-list>
+    <ion-item>
+        <ion-label>Prenom</ion-label>
+        <ion-input id="prenomInput"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Nom</ion-label>
+        <ion-input id="nomInput"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Age</ion-label>
+        <ion-input id="ageInput"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Ville</ion-label>
+        <ion-input id="villeInput"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Métier</ion-label>
+        <ion-input id="metierInput"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Bio</ion-label>
+        <ion-input id="bioInput"></ion-input>
+    </ion-item>
+
+
+    <ion-button (click)="sauvegarderClicked()">Sauvegarder</ion-button>
+
+    <div id="resultDiv"></div>
+</ion-list>
+<div id="resultDiv"></div>
+
+<div id="resultDiv" style="border: 1px solid red;"></div>
+
+
+
 </ion-content>
+
+<ion-button (click)="sauvegarderClicked()">Sauvegarder</ion-button>
 
 
 <ion-button (click)="presentAlert()">Supprimer le compte</ion-button>
