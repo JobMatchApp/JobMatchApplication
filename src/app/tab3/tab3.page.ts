@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
+import { ImageCroppedEvent } from 'ngx-image-cropper';
 
 @Component({
   selector: 'app-tab3',
@@ -62,6 +63,8 @@ export class Tab3Page {
       }
     }
   }
+
+  
 }
 
 
