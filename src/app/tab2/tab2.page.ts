@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-tab2',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  
   users = [
     {
       name: 'Cedric',
@@ -36,6 +38,27 @@ export class Tab2Page {
       lastMessage: 'Salut, ça fait longtemps !',
     },
   ];
+
+  newMessage: string = '';
+
+  
   constructor() {}
+
+   // Cette fonction sera appelée lorsque l'utilisateur cliquera sur le bouton "Envoyer"
+   sendMessage() {
+    // Récupérez le message depuis newMessage et effectuez des opérations de traitement ici
+    const messageToSend = this.newMessage;
+
+    // Vous pouvez ensuite envoyer le message à l'utilisateur approprié, par exemple, le premier utilisateur
+    // Dans la réalité, vous voudrez implémenter la logique de gestion des conversations
+    this.users[0].lastMessage = messageToSend;
+
+    // Effacez le champ de saisie après l'envoi
+    this.newMessage = '';
+  }
+
+
+
+
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
@@ -6,32 +7,43 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit{
-  users : Array<any> =  [
-    {
-      name: 'Jane Doe',
-      age: 25,
-      bio: 'I love to travel and try new foods!',
-      image: 'assets/photo/tof12.jpg',
-    },
-    {
-      name: 'John Smith',
-      age: 28,
-      bio: 'Looking for someone to join me on my next adventure.',
-      image: 'assets/photo/tof13.jpg',
-    },
-    {
-      name: 'Sarah Johnson',
-      age: 31,
-      bio: 'Wine and pizza enthusiast.',
-      image: 'assets/photo/tof14.jpg',
-    },
-    {
-      name: 'Mike Davis',
-      age: 24,
-      bio: 'Musician and dog lover.',
-      image: 'assets/photo/tof15.jpg',
-    },
-  ];
+  users: Array<any> = [];
+
+  constructor(private dataService: DataService) {} // Injection du DataService
+
+  ngOnInit() {
+    // Vous pouvez également initialiser les données ici si nécessaire
+    this.users = [
+      {
+        name: 'Jane Doe',
+        age: 25,
+        bio: 'I love to travel and try new foods!',
+        image: 'assets/photo/tof12.jpg',
+      },
+      {
+        name: 'John Smith',
+        age: 28,
+        bio: 'Looking for someone to join me on my next adventure.',
+        image: 'assets/photo/tof13.jpg',
+      },
+      {
+        name: 'Sarah Johnson',
+        age: 31,
+        bio: 'Wine and pizza enthusiast.',
+        image: 'assets/photo/tof14.jpg',
+      },
+      {
+        name: 'Mike Davis',
+        age: 24,
+        bio: 'Musician and dog lover.',
+        image: 'assets/photo/tof15.jpg',
+      },
+    ];
+
+    // Enregistrez les données dans le service DataService
+    this.dataService.setUsers(this.users);
+  }
+
 
   // Fonction pour faire défiler les cartes vers la gauche
   scrollLeft() {
@@ -71,7 +83,6 @@ export class HomePage implements OnInit{
   startX:number = 0;
   endX:number = 0;
 
-  constructor(){}
 
 
   touchStart(evt:any){
@@ -129,7 +140,5 @@ export class HomePage implements OnInit{
   }
 
 
-  ngOnInit(): void {
-    
-  }
+
 }
