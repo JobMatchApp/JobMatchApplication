@@ -1,13 +1,11 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="logo-header">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-img src="../../assets/photo/logo-official.png" class="logo"></ion-img>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-content color="light">
+<ion-content [fullscreen]="true" class="menu-with-green-background">
+
     <ion-list [inset]="true">
       <ion-item>
         <ion-thumbnail slot="start">
@@ -63,11 +61,11 @@
       </ion-item>
 
     </ion-list>
-  </ion-content>
 
 
 
-  <ion-tabs>
+
+    <ion-tabs>
     <ion-tab-bar slot="bottom">
       <ion-tab-button tab="tab1">
         <ion-icon name="home"></ion-icon>
@@ -84,5 +82,5 @@
         <ion-label>Profile</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
-  </ion-tabs>
+    </ion-tabs>
 </ion-content>

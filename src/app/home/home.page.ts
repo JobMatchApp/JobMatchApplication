@@ -8,28 +8,28 @@ import { Component, OnInit} from '@angular/core';
 export class HomePage implements OnInit{
   users : Array<any> =  [
     {
-      name: 'Jane Doe',
-      age: 25,
-      bio: 'I love to travel and try new foods!',
-      image: 'assets/photo/tof12.jpg',
+      name: 'Tesla',
+      age: 'Developpeur-front',
+      bio: 'Nous cherchons un dev front',
+      image: 'assets/photo/Tesla.jpg',
     },
     {
-      name: 'John Smith',
-      age: 28,
-      bio: 'Looking for someone to join me on my next adventure.',
-      image: 'assets/photo/tof13.jpg',
+      name: 'entretech',
+      age: 'Developpeur-back',
+      bio: 'Nous cherchons un dev',
+      image: 'assets/photo/logoetp.jpg',
     },
     {
-      name: 'Sarah Johnson',
-      age: 31,
-      bio: 'Wine and pizza enthusiast.',
-      image: 'assets/photo/tof14.jpg',
+      name: 'pc tech',
+      age: 'Developpeur-front',
+      bio: 'Nous cherchons un dev',
+      image: 'assets/photo/ttp.jpg',
     },
     {
-      name: 'Mike Davis',
-      age: 24,
-      bio: 'Musician and dog lover.',
-      image: 'assets/photo/tof15.jpg',
+      name: 'Apple',
+      age: 'Developpeur-back',
+      bio: 'Nous cherchons un dev',
+      image: 'assets/photo/apple.png',
     },
   ];
 

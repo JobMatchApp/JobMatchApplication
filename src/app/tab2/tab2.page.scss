@@ -1,0 +1,26 @@
+.menu-with-green-background {
+
+    --ion-background-color: linear-gradient(#6d19f5, #050c44);      
+}
+  
+  
+ion-toolbar {
+  
+    --background: url('../../assets/photo/colorviolet.jpg') 
+}
+  
+.logo-header ion-toolbar {
+    text-align: center; /* Centre le contenu horizontalement */
+}
+  
+.logo {
+    width: 100px; /* Largeur souhaitée en pixels */
+    height: auto; /* Laissez "auto" pour maintenir la proportion d'origine */
+    margin: 0 auto; /* Centre le logo horizontalement en utilisant des marges automatiques */
+}
+
+
+
+ion-list .ion-item {
+  --ion-background-color: transparent!important;
+}

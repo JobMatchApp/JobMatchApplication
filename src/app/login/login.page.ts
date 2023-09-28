@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -7,7 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  constructor(    private navCtrl: NavController,
+    private router: Router) { 
+
+  }
+
+  goToTab1() {
+    this.router.navigate(['./home']);
+  }
+
+  
 
   ngOnInit() {
   }
